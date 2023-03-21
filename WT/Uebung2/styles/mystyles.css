@@ -20,6 +20,8 @@ nav a {
     padding: 2px;
     color: white;
     background-color: #0082D1;
+    text-decoration: none;
+    font-weight: bold;
 
 }
 
@@ -48,7 +50,7 @@ footer {
     color: black;
     text-align: center;
     margin: 20px;
-    font-size: small;
+    font-size: x-small;
     padding: 20px;
 }
 
