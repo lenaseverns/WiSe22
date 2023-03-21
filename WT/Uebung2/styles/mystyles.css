@@ -1,0 +1,56 @@
+body{
+    font-family: "Verdana";
+}
+
+header {
+    background-color: #AFAFAF;
+    color: #FF5F00;
+    text-align: center;
+}
+
+nav {
+    margin: 50px;
+}
+
+nav a {
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #AFAFAF;
+    margin: 5px;
+    padding: 2px;
+    color: white;
+    background-color: #0082D1;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+nav a:hover{
+    color:#FF5F00;
+    background-color: #AFAFAF;
+}
+
+table {
+    box-shadow: 4px 4px #AFAFAF;
+    width: 80%;
+}
+
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #76B900;
+    color: white;
+}
+
+footer {
+    background-color: #FF5F00;
+    color: black;
+    text-align: center;
+    margin: 20px;
+    font-size: x-small;
+    padding: 20px;
+}
+
