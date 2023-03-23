@@ -10,6 +10,7 @@
 <body>
     <div class="container">
         <h1>Teilnehmerin Registrierung</h1>
+        <br>
     <form class="row">
         <div class="row">
             <div class="col-3">  
@@ -24,8 +25,10 @@
                 <div id="lastnameFeedback" class="invalid-feedback">
                     Bitte Nachnamen eingeben!
                 </div>
+                <br>
             </div>
         </div>
+        
         <div class="row">
             <div class="col-3">
                 <input type="email" class="form-control" id="email" placeholder="E-Mail" required>
@@ -38,14 +41,42 @@
                 <div id="ipaddressFeedback" class="invalid-feedback">
                     Bitte IP-Adresse eingeben!
                 </div>
+                <br>
             </div>
         </div>
         <div class="row">
             <div class="col-2">
                 <button class="btn btn-secondary" type="reset" onclick="reset()">Abbrechen</button>
             </div>
-            <div class="col-2">
-                <button class="btn btn-success" onclick="register()" type="submit">Registrieren</button>
+            <div class="col-3">
+                <button id="btn" class="btn btn-success" type="button">Registrieren</button>
+
+                <script>
+                    document.getElementById("btn").onclick = function() {
+                        
+                        var first = document.getElementById("firstname").value; 
+                        var last = document.getElementById("lastname").value;
+                        var email = document.getElementById("email").value;
+                        var ip = document.getElementById("ipaddress").value;
+                        var blurb = "Eingegebene Werte"+"<br>"+"Vorname: " + first + "<br>" +"Nachname: "+ last+ "<br>" + "E-Mail: "+email+ "<br>" + "IP: " + ip;
+
+                        if(first==false || last==false || email==false || ip==false){
+                            document.getElementById("p1").innerHTML = " ";
+                        } else {
+                            document.getElementById("p1").innerHTML = blurb;
+                        }
+                       
+                     }
+                </script>
+
+                <p id="p1"></p>
+                
+            </div>
+            <br>
+        </div>
+        <div class="row">
+            <div class="col-4">
+               
             </div>
         </div>
     </form>
@@ -55,3 +86,12 @@
     </footer>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
