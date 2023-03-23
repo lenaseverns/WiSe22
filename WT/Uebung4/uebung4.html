@@ -45,20 +45,25 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-2">
-                <button class="btn btn-secondary" type="reset" onclick="reset()">Abbrechen</button>
-            </div>
-            <div class="col-3">
+            <div class="col-4">
+                <button class="btn btn-secondary" id="rbtn" type="reset">Abbrechen</button>
                 <button id="btn" class="btn btn-success" type="button">Registrieren</button>
-
+                
                 <script>
+                    document.getElementById("rbtn").onclick = function(){
+                        if(true){
+                            document.getElementById("p1").innerHTML = " ";
+                        } else {
+                            document.getElementById("p1").innerHTML = blurb;
+                        }
+                    }
                     document.getElementById("btn").onclick = function() {
                         
                         var first = document.getElementById("firstname").value; 
                         var last = document.getElementById("lastname").value;
                         var email = document.getElementById("email").value;
                         var ip = document.getElementById("ipaddress").value;
-                        var blurb = "Eingegebene Werte"+"<br>"+"Vorname: " + first + "<br>" +"Nachname: "+ last+ "<br>" + "E-Mail: "+email+ "<br>" + "IP: " + ip;
+                        var blurb = "<h3>Eingegebene Werte<h3>"+"<br>"+"Vorname: " + first + "<br>" +"Nachname: "+ last+ "<br>" + "E-Mail: "+email+ "<br>" + "IP: " + ip;
 
                         if(first==false || last==false || email==false || ip==false){
                             document.getElementById("p1").innerHTML = " ";
