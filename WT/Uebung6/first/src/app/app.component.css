@@ -1,3 +1,18 @@
-h1 {
-    color: red;
+.mainwrapper{
+    display: grid;
+    grid-template-columns: repeat(1, 1f);
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.two{
+    grid-column:1/3;
+    grid-row: 2;
+}
+
+.pizza{
+    background-color: lightgreen;
+    color: darkgreen;
+    font-family: fantasy;
+    font-weight: bold;
+    text-align: center;
 }
