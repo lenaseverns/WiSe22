@@ -1,3 +1,4 @@
+//import { HomeComponent} from '.'
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -8,3 +9,6 @@ const routes: Routes = [];
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+
+//this is what connects you to your testing server stuff
